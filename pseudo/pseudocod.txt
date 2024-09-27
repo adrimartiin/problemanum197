@@ -1,0 +1,4 @@
+x1->x: definir variable con lo que pasa el usuario del input ($frase = $_POST['frase'])
+
+
+x2->x1
