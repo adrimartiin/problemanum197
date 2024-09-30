@@ -1,4 +1,27 @@
-(Adri) x1->x: definir variable con lo que pasa el usuario del input ($frase = $_POST['frase']) 
+(Adri) x1->x: 
+Inicio programa
+    Mientras hay linea de entrada
+    Leer texto x
+
+    Inicializar X' como array
+    Inicializar variable cadena como una cadena vacía
+        
+        (Bucle) Para cada caracter c en X
+            Si c NO es vocal
+                Agregar c a segmento
+            Si c es vocal o espacio
+                Si segmento no está vacío
+                    Revertir segmento y agregarlo a X'
+                    Vaciar segmento
+                Agregar c a X'
+        
+        Si segmento no está vacío
+            Revertir segmento y agregarlo a X'
+        
+        Convertir X' en una cadena
+        Imprimir X seguido de " => " seguido del contenido de X'
+    Fin Mientras
+Fin 
 
 
 (Kilian) x2->x1 
