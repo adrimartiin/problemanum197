@@ -1,0 +1,28 @@
+
+        INICIO
+
+        //MUESTRO POR PANTALLA
+        - Pido al usuario por pantalla que introduzca una frase cifrada
+        - Leo la frase cifrada
+
+        - Compruebo que haya llegado algo por POST
+        - Inicializo las variables necessarias
+        - Cuento la longitud de la frase introducida por el usuario
+
+        //BUCLE 
+        - Con un bucle voy a recorrer cada una de las posiciones de la frase original desde la posicion 0 
+          hasta la ultima posicion de la frase
+        - Si la  posicion es par, entoces se añade a un array llamado frase frase_Transformada
+        
+        - Con otro bucle recorro la frase a la inversa, empezando por el final hasta la posicion 0
+        - En case de que la posicion fuera inpar se añade al array de frase frase_Transformada
+
+        - Convierto el array en una cadena para poder mostrarlo por pantalla 
+
+        //MUESTRO POR PANTALLA
+        - Una vez se haya recorrido toda la frase con los dos bucles, el array se habra llenado con un orden 
+          especifico en base si la posicion era par o inpar
+        - Al passar el array a una cadena se mostrará por pantalla parar que el usuario pueda ver la frase descifrada
+    
+
+        
