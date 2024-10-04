@@ -1,0 +1,38 @@
+x1->x: 
+Proceso descifra_mensaje
+    Definir cadena, vocales, frase_descifrada, secuencia, letra Como Caracter
+    Definir i Como Entero
+
+   
+    Escribir "Introduce la cadena:"
+    Leer cadena
+    vocales <- "aeiouAEIOU"
+    frase_descifrada <- ""
+    secuencia <- ""
+
+    
+    Para i <- 1 Hasta longitud(cadena) Hacer
+        letra <- SubCadena(cadena, i, 1)
+        Si buscar(letra, vocales) <> 0 Entonces
+            frase_descifrada <- frase_descifrada + alreves(secuencia) + letra
+            secuencia <- "" 
+        SiNoa
+            secuencia <- secuencia + letra
+        FinSi
+    FinPara
+
+    frase_descifrada <- frase_descifrada + alreves(secuencia)
+
+    Escribir "Frase descifrada: ", frase_descifrada
+FinProceso
+
+
+Funcion alreves(cadena) Como Caracter
+    Definir invertida Como Caracter
+    Definir i Como Entero
+    invertida <- ""
+    Para i <- longitud(cadena) Hasta 1 Con Paso -1 Hacer
+        invertida <- invertida + SubCadena(cadena, i, 1)
+    FinPara
+    alreves <- invertida
+FinFuncion

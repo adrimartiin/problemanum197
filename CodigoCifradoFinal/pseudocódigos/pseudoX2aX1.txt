@@ -1,0 +1,34 @@
+//DEFINIR VARIABLES
+    Definir frase_original, frase_transformada Como Cadena
+    Definir longitud, i Como Entero
+    Definir boton, opcion Como Cadena
+
+    //PEDIR AL USUARIO
+    Escribir "Introduce la frase:"
+    Leer frase_original
+
+
+    //BUCLE
+    Si boton = "Descifrar" Entonces
+        longitud <- Longitud(frase_original)
+        frase_transformada <- ""
+
+        Para i <- 0 Hasta longitud-1 Con Paso 1 Hacer
+            Si (i % 2 = 0) Entonces
+                frase_transformada <- frase_transformada + Subcadena(frase_original, i+1, 1)
+            FinSi
+        FinPara
+
+        Para i <- longitud-1 Hasta 0 Con Paso -1 Hacer
+            Si (i % 2 <> 0) Entonces
+                frase_transformada <- frase_transformada + Subcadena(frase_original, i+1, 1)
+            FinSi
+        FinPara
+
+        //MUESTRO LA FRASE DESCIFRADA
+        Escribir "Frase descifrada: ", frase_transformada
+    FinSi
+
+FinProceso
+
+        
